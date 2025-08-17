@@ -29,9 +29,10 @@ export const handler = async (event: { body: string }) => {
     });
 
     // 성공적인 응답을 프론트엔드로 반환합니다.
+    // The frontend expects an object with a `text` property. We must explicitly create it.
     return {
       statusCode: 200,
-      body: JSON.stringify(response),
+      body: JSON.stringify({ text: response.text }),
     };
   } catch (error) {
     console.error("Error in Netlify function:", error);
