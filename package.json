@@ -1,0 +1,8 @@
+{
+  "name": "lotto-stock-partners",
+  "version": "1.0.0",
+  "description": "Lotto number generation, stock advice, and Coupang recommendations all in one!",
+  "dependencies": {
+    "@google/genai": "^1.14.0"
+  }
+}
