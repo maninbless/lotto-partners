@@ -1,0 +1,15 @@
+[build]
+  # 우리 프로젝트는 빌드 과정이 없으므로 비워둡니다.
+  command = ""
+  # 배포할 파일들이 있는 폴더는 최상위 폴더입니다.
+  publish = "."
+
+[functions]
+  # 서버리스 함수가 있는 폴더를 알려줍니다.
+  directory = "api"
+
+[[redirects]]
+  # 싱글 페이지 앱(SPA)처럼 어떤 주소로 들어와도 index.html을 보여줍니다.
+  from = "/*"
+  to = "/index.html"
+  status = 200
